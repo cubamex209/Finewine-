@@ -10,7 +10,7 @@ User Stories:
 This will be for 21 years old and up. For people new to the wine industry or really don’t know much about and want to learn more about it. The features my app will have is a Home page, login, Sign up page, Questions page, Results page, and info page.
 
 
-Github: https://github.com/cubamex209/Finewine
+Github: https://github.com/cubamex209/Finewine-
 Wire Frames : https://sketch.cloud/s/eaamW
 
-Languages: Ruby on Rails 
+Languages: Ruby on Rails
