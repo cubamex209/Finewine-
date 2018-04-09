@@ -17,3 +17,6 @@ Wines.create(make:"Sauvignon Blanc", year:2012, name:"Page Mill Winery", price:2
 Wines.create(make:"Riesling", year:2013, name:"Retlazff Winery", price:30)
 Wines.create(make:"Pinot Noir", year:2010, name:"Truchard Vineyards", price:40)
 Wines.create(make:"Rose", year:2011, name:"Retzlaff Winery", price:18)
+
+
+Speaker.create(name:"Omar", email:"omarh@gmail.com",password:"123456")
