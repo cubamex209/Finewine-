@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+#Wines in the database
 Wines.create(make:"Cabernet Sauvignon", year:2008, name:"Wente Vineyards", price:25)
 Wines.create(make:"Merlot", year:2006, name:"Gallo Winery", price:32)
 Wines.create(make:"Blend", year:2009, name:"Retlazff Winery", price:28)
@@ -18,5 +18,5 @@ Wines.create(make:"Riesling", year:2013, name:"Retlazff Winery", price:30)
 Wines.create(make:"Pinot Noir", year:2010, name:"Truchard Vineyards", price:40)
 Wines.create(make:"Rose", year:2011, name:"Retzlaff Winery", price:18)
 
-
-Speaker.create(name:"Omar", email:"omarh@gmail.com",password:"123456")
+#Create the users
+Speaker.create(name:"Omar", email:"omarh@gmail.com",password:"1234")
