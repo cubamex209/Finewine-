@@ -7,7 +7,11 @@ root 'welcome#index'
 get "/login", to: "sessions#new"
 get "/logout", to: "sessions#destroy"
 
+get "/signup", to: "speaker#new"
+post "/signup", to: "speaker#show"
+
+
 post '/sessions', to: 'sessions#create'
 
-resources :speakers, :questions, :answers
+resources :speaker, :questions, :answers
 end

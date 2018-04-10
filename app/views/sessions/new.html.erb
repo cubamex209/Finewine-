@@ -4,6 +4,7 @@
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <li><a href="/">Welcome</a></li>
        <li><a href="/login">Login</a></li>
+       <li><a href="/signup">Sign Up</a></li>
      </ul>
    </div>
  </nav>
@@ -12,34 +13,12 @@
 
 <div class="manage-padding">
   <%= form_with model: @speaker, url: "/sessions", method: "post", class: "form-style" do |f| %>
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s12">
-          <input id="email" type="email">
-          <label for=>Email</label>
-        <div class="input-field col s12">
-          <input id="password" type="password">
-          <label for="password">Password</label>
-          <input type="submit" value="Submit">
-        </div>
-        </div>
-      </div>
-  </form>
-</div>
-<div class="form2">
-<h2>Sign Up</h2>
-<% form_with model: @speaker, url: "/sessions", method: "post", class: "form-style" do |f| %>
-<form class="col s12">
-  <div class="row">
-    <div class="input-field col s12">
-        <input id="email" type="email">
-        <label for=>Email</label>
-      <div class="input-field col s12">
-        <input id="password" type="password">
-        <label for="password">Password</label>
-        <input type="submit" value="Submit">
-      </div>
-      </div>
+    <div>
+      <%= f.email_field :email, placeholder: "Email", class: "mail" %>
     </div>
-</form>
+    <div>
+      <%= f.password_field :password, placeholder: "Password", class: "pass" %>
+    </div>
+    <%= f.submit "Log In", class: "button" %>
+  <% end %>
 </div>

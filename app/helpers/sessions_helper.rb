@@ -1,15 +1,14 @@
 module SessionsHelper
-
   def login(speaker)
-session[:speaker_id] =speaker.id
-@current_speaker = speaker
+    sessions[:speaker_id] =speaker.id
+    @current_speaker = speaker
   end
 
 def current_speaker
-  @current_speaker ||= Speaker.find_by_id(session[:speaker_id])
+  @current_speaker ||= Speaker.find_by_id(sessions[:speaker_id])
 end
 
-def logout
-  @current_speaker = session[:speaker_id] = nil
-end
+  def logout
+  @current_speaker = sessions[:speaker_id] = nil
+  end
 end
