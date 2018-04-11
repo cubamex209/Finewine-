@@ -1,5 +1,5 @@
 <div>
-  <% if @speaker.id == sessions[:speaker_id] %>
+  <% if current_speaker %>
     Welcome, <%= @speaker.name %>!
   <% end %>
 </div>
