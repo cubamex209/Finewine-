@@ -1,1 +1,4 @@
-<h1> Wine Show</h1> 
+<% @wine.each do |lol| %>
+<h1> Results</h1>
+ <%= lol.make %> <%= lol.year %> <%= lol.name %></h1>
+<% end %>

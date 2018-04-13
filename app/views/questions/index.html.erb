@@ -1,4 +1,8 @@
 <h1> Test Questions</h1>
+<div id="logo">
+<%= image_tag("winelogo.png") %>
+</div>
+
 <form url="/questions" method="post">
   <h3>What is your favorite type of meal during dinner?</h3>
   <div>
@@ -18,42 +22,46 @@
       name="food" value="veggies">
     <label for="contactChoice4">Veggies</label>
   </div>
+
   <h3> What is your favorite kind of taste?</h3>
   <div>
     <input type="radio" id="contact1"
      name="taste" value="bitter">
-    <label for="contactChoice1">Bitter</label>
+    <label for="contact1">Bitter</label>
 
     <input type="radio" id="contact2"
-     name="food" value="sweet">
-    <label for="contactChoice2">Sweet</label>
+     name="taste" value="sweet">
+    <label for="contact2">Sweet</label>
 
     <input type="radio" id="contact3"
-     name="food" value="sour">
-    <label for="contactChoice3">Sour</label>
+     name="taste" value="sour">
+    <label for="contact3">Sour</label>
 
     <input type="radio" id="contact4"
-      name="food" value="salty">
-    <label for="contactChoice4">Salty</label>
+      name="taste" value="salty">
+    <label for="contact4">Salty</label>
   </div>
+
+
   <h3> What is your favorite kind of smell?</h3>
   <div>
     <input type="radio" id="Choice1"
      name="smell" value="rosemary">
-    <label for="contactChoice1">Rosemary</label>
+    <label for="Choice1">Rosemary</label>
 
     <input type="radio" id="Choice2"
-     name="smell" value="oak">
-    <label for="contactChoice2">Oak</label>
+     name="smell" value="Oak">
+    <label for="Choice2">Oak</label>
 
     <input type="radio" id="Choice3"
      name="smell" value="lavendar">
-    <label for="contactChoice3">Lavendar</label>
+    <label for="Choice3">Lavendar</label>
 
     <input type="radio" id="Choice4"
       name="smell" value="lemon">
-    <label for="contactChoice4">Lemon</label>
+    <label for="Choice4">Lemon</label>
   </div>
+
   <div>
     <button type="submit">Submit</button>
   </div>

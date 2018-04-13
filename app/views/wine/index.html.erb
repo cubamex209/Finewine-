@@ -1,3 +1,4 @@
 <% @wines.each do |item| %>
-  <h1> <%= item.make %> </h1>
+  <h1> <%= item.make %> <%= item.year %>
+    <h2 class="wineries"><%= item.name %></h2>
 <% end %>

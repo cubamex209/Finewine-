@@ -1,16 +1,7 @@
-<nav>
-   <div class="nav-wrapper">
-     <a href="#" class="brand-logo">Fine Wine</a>
-     <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><a href="/">Welcome</a></li>
-       <li><a href="/login">Login</a></li>
-       <li><a href="/signup">Sign Up</a></li>
-     </ul>
-   </div>
- </nav>
 <h2>Sign up</h2>
 
-<%= form_with model: @speaker_path, class: "form-style" do |f| %>
+<%= form_with model: @speaker, class: "form-style" do |f| %>
+
   <%= f.email_field :email, placeholder: "Email", class: "email" %><br>
   <%= f.password_field :password, placeholder: "Password",class: "pass" %><br>
   <%= f.submit "SignUp", class: "button" %>
