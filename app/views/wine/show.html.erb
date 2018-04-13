@@ -1,4 +1,7 @@
-<% @wine.each do |lol| %>
 <h1> Results</h1>
- <%= lol.make %> <%= lol.year %> <%= lol.name %></h1>
+<% @wine.each do |lol| %>
+ <h3><%= lol.make %><br></h3>
+ <h4><%= lol.year %><br></h4>
+<h5><a href=""><%= lol.name %><br /></a></h5>
+<h5><%= lol.price %></h5>
 <% end %>

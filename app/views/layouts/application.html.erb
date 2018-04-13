@@ -6,6 +6,7 @@
 
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display' %>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
@@ -29,12 +30,10 @@
     <%= yield %>
   </main>
 
-  <footer class="page-footer purple">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Fine Wine</h5>
-  </footer>
+  <footer class="page-footer">
+    <h4> Fine Wine</h4>
+    <p class="copyright">&copy; Omar 2018</p>
+
 
 </body>
 </html>
