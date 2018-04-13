@@ -1,5 +1,7 @@
 <h2 id="login">Login</h2>
 
+
+
 <div class="manage-padding">
   <%= form_with model: @speaker, url: "/sessions", method: "post", class: "form-style" do |f| %>
     <div>
@@ -11,3 +13,5 @@
     <%= f.submit "Log In", class: "btn black text-white" %>
   <% end %>
 </div>
+
+<div class="col s7 center"><%= image_tag("hands1.png") %>

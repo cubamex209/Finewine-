@@ -3,7 +3,9 @@ class WineController < ApplicationController
   def index
     @wines=Wine.all
   end
-  def show
+
+  #This allows you to choose from questions what answers will be provided
+def show
     @choices = { :taste => params[:taste], :smell => params[:smell], :food =>params[:food]}
     @taste_list = {:salty => 4, :sour => 3, :bitter => 2, :sweet => 1}
     @food_list = {:steak => 'a', :chicken => 'b', :fish => 'c', :veggies => 'd'}
@@ -11,8 +13,7 @@ class WineController < ApplicationController
     @choice_number = @taste_list[@choices[:taste].to_sym].to_s + @food_list[@choices[:food].to_sym]  + @smells_list[@choices[:smell].to_sym]
 
     puts @choice_number
-    # @wine = Wine.find({choice: })
-    @wine = Wine.where(tag: @choice_number)
+      @wine = Wine.where(tag: @choice_number)
   end
 
 end
