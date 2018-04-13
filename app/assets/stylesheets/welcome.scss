@@ -3,13 +3,29 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1{
   text-align: center;
+  font-family: 'Playfair Display', serif;
+
 }
 
 .nav-wrapper{
   background-color: purple;
+  font-family: 'Playfair Display', serif;
+
 }
 
-.page-footer{
-  color: purple;
 
+footer.page-footer{
+background: purple;
+margin-top: 15em;
+padding-bottom: 6px;
+}
+body{
+  background:#eeeeee;
+}
+p{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 24px;
+}
+h6{
+  font-family: 'Fira Sans', sans-serif;
 }
